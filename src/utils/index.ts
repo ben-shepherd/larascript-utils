@@ -1,4 +1,6 @@
 export * from "./captureError";
+export * from "./checksum";
+export * from "./deepClone";
 export * from "./forceString";
 export * from "./generateUuidV4";
 export * from "./replaceEnvVars";
