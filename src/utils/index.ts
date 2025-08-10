@@ -3,6 +3,7 @@ export * from "./checksum";
 export * from "./deepClone";
 export * from "./forceString";
 export * from "./generateUuidV4";
+export * from "./minExecTime";
 export * from "./replaceEnvVars";
 export * from "./returnOrThrow";
 export * from "./str";
