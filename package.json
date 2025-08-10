@@ -55,6 +55,7 @@
     "errorMsg": "Branch name validation failed"
   },
   "dependencies": {
+    "crypto": "^1.0.1",
     "uuid": "^11.1.0"
   }
 }
