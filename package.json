@@ -53,5 +53,8 @@
   "validate-branch-name": {
     "pattern": "^(feat|fix|hotfix|release|test|experimental|refactor)/.+$",
     "errorMsg": "Branch name validation failed"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
   }
 }
