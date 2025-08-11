@@ -5,7 +5,7 @@ A comprehensive TypeScript utility library providing essential tools for common 
 ## Installation
 
 ```bash
-npm install @ben-shepherd/larascript-utils-bundle
+npm install ben-shepherd/larascript-utils-bundle
 ```
 
 ## Documentation
