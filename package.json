@@ -55,6 +55,7 @@
     "errorMsg": "Branch name validation failed"
   },
   "dependencies": {
+    "@ben-shepherd/dot-notation-extractor": "github:ben-shepherd/dot-notation-extractor",
     "crypto": "^1.0.1",
     "lodash": "^4.17.21",
     "uuid": "^11.1.0"
