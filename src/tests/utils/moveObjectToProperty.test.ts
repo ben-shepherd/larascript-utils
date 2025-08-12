@@ -11,26 +11,26 @@ describe("MoveObjectToProperty", () => {
   describe("addOption", () => {
     test("should add option to formatter", () => {
       formatter.addOption("department_name", "department");
-      
+
       expect(formatter.formatterOptions).toHaveLength(1);
       expect(formatter.formatterOptions[0]).toEqual({
         column: "department_name",
-        targetProperty: "department"
+        targetProperty: "department",
       });
     });
 
     test("should add multiple options", () => {
       formatter.addOption("department_name", "department");
       formatter.addOption("user_id", "user");
-      
+
       expect(formatter.formatterOptions).toHaveLength(2);
       expect(formatter.formatterOptions[0]).toEqual({
         column: "department_name",
-        targetProperty: "department"
+        targetProperty: "department",
       });
       expect(formatter.formatterOptions[1]).toEqual({
         column: "user_id",
-        targetProperty: "user"
+        targetProperty: "user",
       });
     });
   });
@@ -45,8 +45,8 @@ describe("MoveObjectToProperty", () => {
           id: 1,
           name: "John",
           department_name: { name: "Engineering", code: "ENG" },
-          department_id: { id: 100, type: "main" }
-        }
+          department_id: { id: 100, type: "main" },
+        },
       ];
 
       const result = formatter.format(data);
@@ -59,9 +59,9 @@ describe("MoveObjectToProperty", () => {
             name: "Engineering",
             code: "ENG",
             id: 100,
-            type: "main"
-          }
-        }
+            type: "main",
+          },
+        },
       ]);
     });
 
@@ -72,8 +72,8 @@ describe("MoveObjectToProperty", () => {
         {
           id: 1,
           name: "John",
-          department_name: "Engineering"
-        }
+          department_name: "Engineering",
+        },
       ];
 
       const result = formatter.format(data);
@@ -95,15 +95,15 @@ describe("MoveObjectToProperty", () => {
     test("should process array with options", () => {
       const options = [
         { column: "department_name", targetProperty: "department" },
-        { column: "department_id", targetProperty: "department" }
+        { column: "department_id", targetProperty: "department" },
       ];
 
       const data = [
         {
           id: 1,
           department_name: { name: "Engineering" },
-          department_id: { id: 100 }
-        }
+          department_id: { id: 100 },
+        },
       ];
 
       const result = formatter.handleArray(data, options);
@@ -113,9 +113,9 @@ describe("MoveObjectToProperty", () => {
           id: 1,
           department: {
             name: "Engineering",
-            id: 100
-          }
-        }
+            id: 100,
+          },
+        },
       ]);
     });
   });
@@ -125,10 +125,13 @@ describe("MoveObjectToProperty", () => {
       const item = {
         id: 1,
         department_name: { name: "Engineering", code: "ENG" },
-        department_id: { id: 100, type: "main" }
+        department_id: { id: 100, type: "main" },
       };
 
-      const option = { column: "department_name", targetProperty: "department" };
+      const option = {
+        column: "department_name",
+        targetProperty: "department",
+      };
 
       const result = formatter.handleItem(item, option);
 
@@ -136,19 +139,22 @@ describe("MoveObjectToProperty", () => {
         id: 1,
         department: {
           name: "Engineering",
-          code: "ENG"
+          code: "ENG",
         },
-        department_id: { id: 100, type: "main" }
+        department_id: { id: 100, type: "main" },
       });
     });
 
     test("should handle non-object properties", () => {
       const item = {
         id: 1,
-        department_name: "Engineering"
+        department_name: "Engineering",
       };
 
-      const option = { column: "department_name", targetProperty: "department" };
+      const option = {
+        column: "department_name",
+        targetProperty: "department",
+      };
 
       const result = formatter.handleItem(item, option);
 

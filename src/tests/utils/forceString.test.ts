@@ -48,7 +48,7 @@ describe("forceString", () => {
   describe("functions", () => {
     test("should convert functions to strings", () => {
       const testFn = () => "test";
-      expect(forceString(testFn)).toContain("() => \"test\"");
+      expect(forceString(testFn)).toContain('() => "test"');
     });
   });
 

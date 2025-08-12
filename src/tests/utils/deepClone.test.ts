@@ -27,9 +27,9 @@ describe("deepClone", () => {
       const original = {
         level1: {
           level2: {
-            level3: { value: "deep" }
-          }
-        }
+            level3: { value: "deep" },
+          },
+        },
       };
       const cloned = deepClone(original);
 
@@ -50,7 +50,13 @@ describe("deepClone", () => {
     });
 
     test("should handle nested arrays", () => {
-      const original = [[[1, 2], [3, 4]], [5, 6]];
+      const original = [
+        [
+          [1, 2],
+          [3, 4],
+        ],
+        [5, 6],
+      ];
       const cloned = deepClone(original);
 
       expect(cloned).toEqual(original);
@@ -67,8 +73,8 @@ describe("deepClone", () => {
         null: null,
         array: [1, "two", { three: 3 }],
         object: {
-          nested: [false, null, "deep"]
-        }
+          nested: [false, null, "deep"],
+        },
       };
       const cloned = deepClone(original);
 
