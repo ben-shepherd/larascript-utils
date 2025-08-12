@@ -1,6 +1,6 @@
 {
   "name": "@ben-shepherd/larascript-utils",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A comprehensive TypeScript utility library providing essential tools for common programming tasks in the Larascript Framework ecosystem.",
   "repository": {
     "type": "git",
