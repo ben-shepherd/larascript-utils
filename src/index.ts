@@ -4,4 +4,3 @@ export * from "./baseFormatter";
 export { compose } from "./compose";
 export { TClassConstructor } from "./interfaces";
 export * from "./utils";
-

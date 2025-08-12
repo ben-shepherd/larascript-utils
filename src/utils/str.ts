@@ -88,8 +88,6 @@ export class Str {
    */
   public static readonly convertToSafeFileName = (str: string): string => {
     return str
-      .replace(/[^a-zA-Z0-9-]/g, "_")
-      .replace(/_./g, (x) => x[1].toUpperCase())
-      .replace(/_/g, "-");
+      .replace(/[^a-zA-Z0-9-_]/g, "")
   };
 }
