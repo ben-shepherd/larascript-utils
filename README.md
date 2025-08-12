@@ -1,11 +1,11 @@
-# Larascript Utils Bundle
+# Larascript Utils
 
 A comprehensive TypeScript utility library providing essential tools for common programming tasks in the Larascript Framework ecosystem.
 
 ## Installation
 
 ```bash
-npm install ben-shepherd/larascript-utils-bundle
+npm install ben-shepherd/larascript-utils
 ```
 
 ## Documentation

@@ -5,7 +5,7 @@ A utility function for implementing the mixin pattern in TypeScript, allowing yo
 ## Usage
 
 ```typescript
-import { compose } from '@ben-shepherd/larascript-utils-bundle';
+import { compose } from '@ben-shepherd/larascript-utils';
 
 // Define mixin functions
 const LoggableMixin = (BaseClass) => class extends BaseClass {

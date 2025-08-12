@@ -1,10 +1,10 @@
 {
-  "name": "@ben-shepherd/larascript-utils-bundle",
+  "name": "@ben-shepherd/larascript-utils",
   "version": "1.0.5",
-  "description": "Utilities for Larascript Framework",
+  "description": "A comprehensive TypeScript utility library providing essential tools for common programming tasks in the Larascript Framework ecosystem.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ben-shepherd/larascript-utils-bundle"
+    "url": "git+https://github.com/ben-shepherd/larascript-utils"
   },
   "license": "ISC",
   "author": "ben.shepherd@gmx.com",
